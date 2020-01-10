@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.xyb2b.order'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+    compile("org.springframework.boot:spring-boot-starter:2.1.1")
+    compile "com.xuxueli:xxl-job-core:2.1.0"
+}
